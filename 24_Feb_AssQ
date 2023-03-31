@@ -1,0 +1,196 @@
+INFO:root:   PassengerId  Survived  Pclass  \
+0            1         0       3   
+1            2         1       1   
+2            3         1       3   
+3            4         1       1   
+4            5         0       3   
+
+                                                Name     Sex   Age  SibSp  \
+0                            Braund, Mr. Owen Harris    male  22.0      1   
+1  Cumings, Mrs. John Bradley (Florence Briggs Th...  female  38.0      1   
+2                             Heikkinen, Miss. Laina  female  26.0      0   
+3       Futrelle, Mrs. Jacques Heath (Lily May Peel)  female  35.0      1   
+4                           Allen, Mr. William Henry    male  35.0      0   
+
+   Parch            Ticket     Fare Cabin Embarked  
+0      0         A/5 21171   7.2500   NaN        S  
+1      0          PC 17599  71.2833   C85        C  
+2      0  STON/O2. 3101282   7.9250   NaN        S  
+3      0            113803  53.1000  C123        S  
+4      0            373450   8.0500   NaN        S  
+INFO:root:None
+INFO:root:       PassengerId    Survived      Pclass         Age       SibSp  \
+count   891.000000  891.000000  891.000000  714.000000  891.000000   
+mean    446.000000    0.383838    2.308642   29.699118    0.523008   
+std     257.353842    0.486592    0.836071   14.526497    1.102743   
+min       1.000000    0.000000    1.000000    0.420000    0.000000   
+25%     223.500000    0.000000    2.000000   20.125000    0.000000   
+50%     446.000000    0.000000    3.000000   28.000000    0.000000   
+75%     668.500000    1.000000    3.000000   38.000000    1.000000   
+max     891.000000    1.000000    3.000000   80.000000    8.000000   
+
+            Parch        Fare  
+count  891.000000  891.000000  
+mean     0.381594   32.204208  
+std      0.806057   49.693429  
+min      0.000000    0.000000  
+25%      0.000000    7.910400  
+50%      0.000000   14.454200  
+75%      0.000000   31.000000  
+max      6.000000  512.329200  
+INFO:root:Pclass
+1    0.629630
+2    0.472826
+3    0.242363
+Name: Survived, dtype: float64
+INFO:root:Original DataFrame:
+INFO:root:   A  B  C
+0  1  4  7
+1  2  5  8
+2  3  6  9
+INFO:root:Reindexed DataFrame:
+INFO:root:     A    B    C
+1  2.0  5.0  8.0
+3  NaN  NaN  NaN
+5  NaN  NaN  NaN
+INFO:root:The sum of the first three values in the 'Values' column is 60
+INFO:root:The DataFrame with a new 'Word_Count' column is:
+                          Text  Word_Count
+0        This is a sample text           5
+1  Here is another sample text           5
+INFO:root:The size of the DataFrame is 9
+INFO:root:The shape of the DataFrame is (3, 3)
+INFO:root:   Unnamed: 0  Unnamed: 1  Unnamed: 2  \
+0         NaN         NaN         NaN   
+1         NaN         NaN         NaN   
+2         NaN         NaN         NaN   
+3         NaN         NaN         NaN   
+4         NaN         NaN         NaN   
+
+                                          Unnamed: 3 Unnamed: 4 Unnamed: 5  \
+0                                                NaN        NaN        NaN   
+1                                 Datetimes in LUSID        NaN        NaN   
+2                                                NaN        NaN        NaN   
+3   This sheet allows you to format datetimes for...        NaN        NaN   
+4        If you have any questions please visit our:        NaN        NaN   
+
+   Unnamed: 6 Unnamed: 7 Unnamed: 8 Unnamed: 9  
+0         NaN        NaN        NaN        NaN  
+1         NaN        NaN        NaN        NaN  
+2         NaN        NaN        NaN        NaN  
+3         NaN        NaN        NaN        NaN  
+4         NaN        NaN        NaN        NaN  
+INFO:root:                    Email    Username
+0    john.doe@example.com    john.doe
+1  jane.smith@example.com  jane.smith
+2  bob.harris@example.com  bob.harris
+INFO:root:   A  B  C
+1  8  2  7
+2  6  9  4
+4  9  1  2
+INFO:root:Original DataFrame:
+         Date  Sales
+0  2023-03-01     10
+1  2023-03-02     15
+2  2023-03-03     20
+3  2023-03-04     25
+4  2023-03-05     30
+5  2023-03-06     35
+6  2023-03-07     40
+7  2023-03-08     45
+8  2023-03-09     50
+9  2023-03-10     55
+10 2023-03-11     60
+11 2023-03-12     65
+12 2023-03-13     70
+13 2023-03-14     75
+14 2023-03-15     80
+15 2023-03-16     85
+16 2023-03-17     90
+17 2023-03-18     95
+18 2023-03-19    100
+19 2023-03-20    105
+20 2023-03-21    110
+21 2023-03-22    115
+22 2023-03-23    120
+23 2023-03-24    125
+24 2023-03-25    130
+25 2023-03-26    135
+26 2023-03-27    140
+27 2023-03-28    145
+28 2023-03-29    150
+29 2023-03-30    155
+30 2023-03-31    160
+INFO:root:DataFrame with MovingAverage column:
+         Date  Sales  MovingAverage
+0  2023-03-01     10           10.0
+1  2023-03-02     15           12.5
+2  2023-03-03     20           15.0
+3  2023-03-04     25           17.5
+4  2023-03-05     30           20.0
+5  2023-03-06     35           22.5
+6  2023-03-07     40           25.0
+7  2023-03-08     45           30.0
+8  2023-03-09     50           35.0
+9  2023-03-10     55           40.0
+10 2023-03-11     60           45.0
+11 2023-03-12     65           50.0
+12 2023-03-13     70           55.0
+13 2023-03-14     75           60.0
+14 2023-03-15     80           65.0
+15 2023-03-16     85           70.0
+16 2023-03-17     90           75.0
+17 2023-03-18     95           80.0
+18 2023-03-19    100           85.0
+19 2023-03-20    105           90.0
+20 2023-03-21    110           95.0
+21 2023-03-22    115          100.0
+22 2023-03-23    120          105.0
+23 2023-03-24    125          110.0
+24 2023-03-25    130          115.0
+25 2023-03-26    135          120.0
+26 2023-03-27    140          125.0
+27 2023-03-28    145          130.0
+28 2023-03-29    150          135.0
+29 2023-03-30    155          140.0
+30 2023-03-31    160          145.0
+INFO:root:Added Weekday column to DataFrame.
+INFO:root:        Date    Weekday
+0 2023-01-01     Sunday
+1 2023-01-02     Monday
+2 2023-01-03    Tuesday
+3 2023-01-04  Wednesday
+4 2023-01-05   Thursday
+INFO:root:Selecting rows between 2023-01-01 and 2023-01-31
+INFO:root:         Date  Value
+0  2023-01-01      0
+1  2023-01-02      1
+2  2023-01-03      2
+3  2023-01-04      3
+4  2023-01-05      4
+5  2023-01-06      5
+6  2023-01-07      6
+7  2023-01-08      7
+8  2023-01-09      8
+9  2023-01-10      9
+10 2023-01-11     10
+11 2023-01-12     11
+12 2023-01-13     12
+13 2023-01-14     13
+14 2023-01-15     14
+15 2023-01-16     15
+16 2023-01-17     16
+17 2023-01-18     17
+18 2023-01-19     18
+19 2023-01-20     19
+20 2023-01-21     20
+21 2023-01-22     21
+22 2023-01-23     22
+23 2023-01-24     23
+24 2023-01-25     24
+25 2023-01-26     25
+26 2023-01-27     26
+27 2023-01-28     27
+28 2023-01-29     28
+29 2023-01-30     29
+30 2023-01-31     30
